@@ -19,14 +19,25 @@ public class Motor {
     public void setB(int b) {
         this.b = b;
     }
+
     //construc area
-    public Motor(int a){
-        System.out.println(a);
+    public Motor(int a) {
+        System.out.println("I: " + a);
     }
-    public Motor(float a){
-        System.out.println("..."+a);
+
+    public Motor(float a) {
+        System.out.println("F: " + a);
     }
-    
+
+    public Motor(int a, int b) {
+        String c = "";
+        if (a < 0 || a <= 1) {
+            System.out.println("1");
+        } else if ((a >= 1) && (b >= 1)) {
+            System.out.println(a + "/" + b);
+        }
+    }
+
 //    public String a(int getA, int getB){
 //        return "Fra: "+a+"/"+b;
 //    }
