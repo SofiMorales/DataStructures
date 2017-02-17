@@ -1,6 +1,6 @@
 package firshclass;
 
-public class Motor {
+public class Prog {
 
     private int a, b;
 
@@ -21,19 +21,19 @@ public class Motor {
     }
 
     //construc area
-    public Motor() {
+    public Prog() {
 
     }
 
-    public Motor(int a) {
+    public Prog(int a) {
         System.out.println("I: " + a);
     }
 
-    public Motor(float a) {
+    public Prog(float a) {
         System.out.println("F: " + a);
     }
 
-    public Motor(int a, int b) {
+    public Prog(int a, int b) {
         String c = "";
         if (a < 0 || a <= 1) {
             System.out.println("1");
