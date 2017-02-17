@@ -21,6 +21,10 @@ public class Motor {
     }
 
     //construc area
+    public Motor() {
+
+    }
+
     public Motor(int a) {
         System.out.println("I: " + a);
     }
@@ -38,6 +42,30 @@ public class Motor {
         }
     }
 
+    public String Motore(int a, int b) {
+//        if(b==0)
+//        return a;
+//        else
+//            return Motore(b,a%b);
+        String r="";
+        int c = (int) (a / b);
+        if (((a / b) - c) == 0) {
+            int r1=(a/b);
+            r=r1+"";
+        } else {
+            int v=a(a,b);
+            a/=v;
+            b/=v;
+            r=a+"/"+b;
+        }
+        return r;
+    }
+    public int a(int a,int b){
+        if(b==0)
+            return a;
+        else
+            return a(b,a%b);
+    }
 //    public String a(int getA, int getB){
 //        return "Fra: "+a+"/"+b;
 //    }

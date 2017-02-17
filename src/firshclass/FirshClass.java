@@ -10,6 +10,9 @@ public class FirshClass {
         new Motor(2);
         //to show frac, with control
         new Motor(2, 3);
+        //simplify frac
+        Motor a=new Motor();
+        System.out.println(a.Motore(8, 4));
         //send values
 //        System.out.println("Values in Fractions.");
 //        System.out.println(a.a(1, 2));
