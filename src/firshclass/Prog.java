@@ -1,8 +1,8 @@
 package firshclass;
 
 public class Prog {
-
-    private int a, b;
+    Object f= new Object();
+    private int a=3, b=5;
 
     public int getA() {
         return a;
@@ -65,6 +65,12 @@ public class Prog {
             return a;
         else
             return a(b,a%b);
+    }
+    
+    public String Motore1(int b,int c){
+        String a="";
+        
+        return a;
     }
 //    public String a(int getA, int getB){
 //        return "Fra: "+a+"/"+b;

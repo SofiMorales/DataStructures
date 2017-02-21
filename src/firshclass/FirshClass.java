@@ -12,8 +12,9 @@ public class FirshClass {
         new Prog(2, 3);
         //simplify frac
         Prog a=new Prog();
-        System.out.println(a.Motore(8, 4));
+        System.out.println(a.Motore(45, 3));
         //sum frac
+        
         
 //        System.out.println("Values in Fractions.");
 //        System.out.println(a.a(1, 2));
