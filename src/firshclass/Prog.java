@@ -29,8 +29,8 @@ public class Prog {
         System.out.println("I: " + a);
     }
 
-    public Prog(float a) {
-        System.out.println("F: " + a);
+    public Prog(double a) {
+        System.out.println("D: " + a);
     }
 
     public Prog(int a, int b) {
@@ -67,11 +67,13 @@ public class Prog {
             return a(b,a%b);
     }
     
-    public String Motore1(int b,int c){
-        String a="";
-        
-        return a;
-    }
+//    public int Motore1(int b,int c){
+//       int a=10;
+//       int d=36;
+////        
+////       x=new Motore1(a,b);
+////        return x;
+//    }
 //    public String a(int getA, int getB){
 //        return "Fra: "+a+"/"+b;
 //    }
