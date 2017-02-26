@@ -1,6 +1,6 @@
 package ter;
 
-public class MotorM {
+public class A {
 
     private int a;
     private int b;
@@ -25,45 +25,61 @@ public class MotorM {
         this.b = b;
     }
 
-    public MotorM() {
+    public A() {
         this.b = 1;
     }
 
-    public MotorM (int a) {
+    public A(int a) {
         this.b = a;
     }
 
-    public MotorM(double a) {
+    public A(double a) {
         this.b = (int) a;
     }
-    public MotorM(int a, int b) {
+
+    public A(int a, int b) {
         int c = a(a, b);
         this.a = a / c;
         this.b = b / c;
     }
-    public MotorM simplifi(int a,int b) {
-        MotorM z=null;
+
+    public A simplifi(int a, int b) {
+        A z = null;
         int c = a(a, b);
         this.a = a / c;
         this.b = b / c;
-        z.a=this.a;
-        z.b=this.b;
+        z.a = this.a;
+        z.b = this.b;
+        return z;
+    }
+
+    public int a(int a, int b) {
+        while (a != b) {
+            if (a < b) {
+                b -= a;
+            } else {
+                a -= b;
+            }
+        }
+        return (a);
+    }
+
+    public A s(A a, A b) {
+        A z = null;
+        if (a.b == 0 && b.b == 0) {
+
+        }
         return z;
     }
     
-    public int a(int a, int b) {
-        if (b == 0) {
-            return a;
-        } else {
-            return a(b, a % b);
-        }
-    }
-    public MotorM s(MotorM a, MotorM b){
-        MotorM z=null;
-        if(a.b==0 && b.b==0){
-            
-        }
-        return z;
+    public A(int a,int b,int c){
+        a=a*c;
+        a+=b;
+        System.out.println(a);
+        System.out.println(c);
+        float a2=a;
+        float c2=c;
+        float f2=(float)(a2/c2);
     }
 
     @Override
@@ -71,11 +87,15 @@ public class MotorM {
         String c = "";
         if (b == 1 && a == 0) {
             c += ((float) b) + "";
-        } else if(a==0 && b==0){
-            c+=a+"."+b;
-        }else if(a==0&&b<0){
-            c+=b+"."+a;
-        }else{c += "value is: " + a + "/" + b;
+        } else if (a == 0 && b == 0) {
+            c += a + "." + b;
+        } else if (a == 0 && b < 0) {
+            c += b + "." + a;
+        } else if (a < 0 && b > 0) {
+            double a2=a/b;
+            c += "value is: " + a2+"bitch";
+        } else {
+            c += "value is: " + a + "/" + b;
         }
         return c;
     }
@@ -98,4 +118,4 @@ String a="";
             a+="value is: "+a+"/"+b;
         }
         return  a;
-*/
+ */

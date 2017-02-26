@@ -4,9 +4,9 @@ public class piuta {
     public int mcd(int a, int b) {
         while (a != b) {
             if (a < b) {
-                b = b - a;
+                b -=a;
             } else {
-                a = a - b;
+                a -= b;
             }
         }
 
@@ -14,8 +14,8 @@ public class piuta {
     }
 
     public static void main(String[] args) {
-        int a = 7;
-        int b = 3;
+        int a = 45;
+        int b = 5;
         piuta max = new piuta();
         int c= max.mcd(a, b);
         a/=c;
