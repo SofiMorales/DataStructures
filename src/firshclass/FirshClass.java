@@ -6,13 +6,13 @@ public class FirshClass {
 //        float a=(float)2.2; //cast float 
 
         //recognize type of value
-        new Prog(2.2);
-        new Prog(2);
+//        new Prog(2.2);
+//        new Prog(2);
         //to show frac, with control
-        new Prog(2, 3);
+//        new Prog(2, 3);
         //simplify frac
         Prog a=new Prog();
-        System.out.println(a.Motore(180, 36));
+        System.out.println(a.Motore(48, 8));
         
         //sum frac
         
