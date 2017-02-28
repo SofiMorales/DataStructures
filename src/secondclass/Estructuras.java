@@ -20,19 +20,10 @@ public class Estructuras {
             System.out.println("N " + i + "= " + a[i]);
             int z2=b/10;
             f[z2]+=1;
-            f[0]=50-(f[1]+f[2]+f[3]+f[4]+f[5]+f[6]+f[7]+f[8]+f[9]);
         }
-        System.out.println("\nSequence...\n");
-        System.out.println("Number 0-9 " + f[0]);
-        System.out.println("Number 10-19 " + f[1]);
-        System.out.println("Number 20-29 " + f[2]);
-        System.out.println("Number 30-39 " + f[3]);
-        System.out.println("Number 40-49 " + f[4]);
-        System.out.println("Number 50-59 " + f[5]);
-        System.out.println("Number 60-69 " + f[6]);
-        System.out.println("Number 70-79 " + f[7]);
-        System.out.println("Number 80-89 " + f[8]);
-        System.out.println("Number 90-99 " + f[9]);
+        for (int i = 0; i < 10; i++) {
+            System.out.println((i+1)+"-- "+f[i]);
+        }
     }
 
     public static int A() {
