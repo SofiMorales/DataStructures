@@ -1,4 +1,4 @@
-package ter;
+package ter1;
 
 public class A {
 
