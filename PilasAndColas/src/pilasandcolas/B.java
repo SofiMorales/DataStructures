@@ -19,12 +19,12 @@ public class B {
     }
 
     //muestra
-    public String D() {
+    public String D(int a) {
         String a2 = "";
-        for (int i = 0; i < b.length; i++) {
-            if (b[i]==0) {
-            }else{
-                a2 += b[i] + "\n";
+        for (int i = 0; i < a; i++) {
+            if (b[i] == 0) {
+            } else {
+                Z(b[i]);
             }
         }
         return a2;
@@ -49,16 +49,80 @@ public class B {
     public String F(int a) {
         String a2 = "";
         for (int i = 0; i < b.length; i++) {
-            if(b[i]==a){
-                a2="Lo encontré";
+            if (b[i] == a) {
+                a2 = "Lo encontré";
                 break;
-            }else{
-                a2="No lo encontré";
+            } else {
+                a2 = "No lo encontré";
             }
         }
         return a2;
     }
 
+    //ordenar por borbuja
+    public void G(int a) {
+        int a1 = a;
+        int temp = 0;
+        long cil = 0;
+        for (int i = 0; i < a1; i++) {
+            temp += 1;
+            for (int j = 1; j < (a1 - i); j++) {
+                if (b[j - 1] > b[j]) {
+                    int z2 = b[j - 1];
+                    b[j - 1] = b[j];
+                    b[j] = z2;
+                    cil += 1;
+                }
+            }
+        }
+        System.out.println("\n" + temp + " Tb vs Swap " + cil);
+    }
+
+    //ordenar por divide y vencerás
+    public void H(int a) {
+        int a2 = a;
+        for (int i = 0; i < a2; i++) {
+            for (int j = 0; j < a2; j++) {
+
+            }
+        }
+    }
+
+    //busqueda binaria
+    public boolean I(int a, int c) {
+        int a2 = a / 2;
+        boolean a3=true;
+        int c2=0;
+        int c3=0;
+        if (b[a2 - 1] > c) {
+            for (int i = 0; i < a2; i++) {
+                if (b[i]==c) {
+                    a3=true;
+                    break;
+                }else{
+                    a3=false;
+                }
+                c2+=1;
+            }
+        } else {
+            for (int i = a2; i < a; i++) {
+                if (b[i]==c) {
+                    a3=true;
+                    break;
+                }else{
+                    a3=false;
+                }
+                c3+=1;
+            }
+        }
+        System.out.println("izquie: "+c2+"------ dere: "+c3);
+        return a3;
+    }
+
+    //mostrar
+    public void Z(int a) {
+        System.out.print(a + " ");
+    }
 //    public int E(int a){
 //        
 //    }
