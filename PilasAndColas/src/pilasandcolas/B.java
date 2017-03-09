@@ -19,21 +19,44 @@ public class B {
     }
 
     //muestra
-    public int D() {
-        int a2 = 0;
+    public String D() {
+        String a2 = "";
         for (int i = 0; i < b.length; i++) {
-            return a2 = b[i];
+            if (b[i]==0) {
+            }else{
+                a2 += b[i] + "\n";
+            }
         }
-
         return a2;
     }
 
-    //elimina
-    public void E(int a) {
-        //NOT FOUND
-        if (b[a] == 0) {
-
+    //eliminar
+    public boolean E(int a) {
+        boolean a2 = true;
+        for (int i = 0; i < b.length; i++) {
+            if (b[i] == a) {
+                a2 = true;
+                b[i] = 0;
+                break;
+            } else {
+                a2 = false;
+            }
         }
+        return a2;
+    }
+
+    //buscar
+    public String F(int a) {
+        String a2 = "";
+        for (int i = 0; i < b.length; i++) {
+            if(b[i]==a){
+                a2="Lo encontré";
+                break;
+            }else{
+                a2="No lo encontré";
+            }
+        }
+        return a2;
     }
 
 //    public int E(int a){
