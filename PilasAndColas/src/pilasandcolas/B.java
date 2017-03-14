@@ -91,31 +91,33 @@ public class B {
     //busqueda binaria
     public boolean I(int a, int c) {
         int a2 = a / 2;
-        boolean a3=true;
-        int c2=0;
-        int c3=0;
+        boolean a3 = false;
+        int c2 = 0;
+        int c3 = 0;
         if (b[a2 - 1] > c) {
             for (int i = 0; i < a2; i++) {
-                if (b[i]==c) {
-                    a3=true;
+                if (b[i] == c) {
+                    a3 = true;
                     break;
-                }else{
+                } else {
+                    a2 /= 2;
                     a3=false;
                 }
-                c2+=1;
+                c3 += 1;
             }
         } else {
             for (int i = a2; i < a; i++) {
-                if (b[i]==c) {
-                    a3=true;
+                if (b[i] == c) {
+                    a3 = true;
                     break;
-                }else{
+                } else {
+                    a2 /= 2;
                     a3=false;
                 }
-                c3+=1;
+                c3 += 1;
             }
         }
-        System.out.println("izquie: "+c2+"------ dere: "+c3);
+        System.out.println("izquie: " + c2 + "------ dere: " + c3);
         return a3;
     }
 

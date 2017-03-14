@@ -1,5 +1,7 @@
 package pilasandcolas;
 
+import java.util.Scanner;
+
 public class A {
 
     /*
@@ -18,7 +20,7 @@ public class A {
     
     public static void main(String[] args) {
         /*proposito general*/
-        int t=50;
+        int t=10;
         B b = new B(t);
         //ingresa
         for (int i = 0; i < t; i++) {
@@ -35,7 +37,9 @@ public class A {
 ////////////////////////        System.out.println("\n\n---ordenado---\n\n");
 ////////////////////////        System.out.println(b.D(t));
         //Busqueda binaria
-        System.out.println(b.I(t,60));
+        System.out.println(b.I(t,20));
+        Scanner a = new Scanner(System.in);
+        int aassa=a.nextInt();
         
 //        System.out.println("ordenado");
 //        System.out.println(b.D());
